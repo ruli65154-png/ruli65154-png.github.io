@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "inverse-surface": "#2e3130",
+            "primary-container": "#004d40",
+            "background": "#f8faf7",
+            "on-primary-container": "#7ebdac",
+            "on-primary-fixed-variant": "#065043",
+            "surface-variant": "#e1e3e0",
+            "primary-fixed-dim": "#94d3c1",
+            "inverse-on-surface": "#eff1ef",
+            "on-primary": "#ffffff",
+            "on-background": "#191c1b",
+            "on-secondary-fixed-variant": "#424846",
+            "on-secondary-container": "#606663",
+            "surface-container-highest": "#e1e3e0",
+            "tertiary-container": "#56401a",
+            "on-secondary": "#ffffff",
+            "error": "#ba1a1a",
+            "surface-bright": "#f8faf7",
+            "outline-variant": "#bfc9c4",
+            "secondary-container": "#dee4e0",
+            "surface-tint": "#29695b",
+            "on-surface-variant": "#3f4945",
+            "on-tertiary-fixed-variant": "#5a431d",
+            "surface-container-low": "#f2f4f1",
+            "surface-dim": "#d8dbd8",
+            "secondary-fixed-dim": "#c2c8c5",
+            "primary": "#00342b",
+            "surface-container-high": "#e7e9e6",
+            "surface": "#f8faf7",
+            "error-container": "#ffdad6",
+            "tertiary-fixed": "#ffdeae",
+            "on-tertiary-container": "#ccac7d",
+            "on-surface": "#191c1b",
+            "primary-fixed": "#afefdd",
+            "on-error-container": "#93000a",
+            "surface-container": "#eceeec",
+            "secondary-fixed": "#dee4e0",
+            "inverse-primary": "#94d3c1",
+            "on-tertiary-fixed": "#281900",
+            "outline": "#707975",
+            "on-secondary-fixed": "#171d1b",
+            "secondary": "#5a605d",
+            "tertiary": "#3e2a06",
+            "on-tertiary": "#ffffff",
+            "on-primary-fixed": "#00201a",
+            "surface-container-lowest": "#ffffff",
+            "tertiary-fixed-dim": "#e3c191",
+            "on-error": "#ffffff"
+          },
+          fontFamily: {
+            "headline": ["Noto Serif"],
+            "body": ["Manrope"],
+            "label": ["Manrope"]
+          },
+          borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    body {
+      font-family: 'Manrope', sans-serif;
+      background-color: #f8faf7;
+      color: #191c1b;
+    }
+    h1, h2, h3, .font-serif {
+      font-family: 'Noto Serif', serif;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased" data-mode="connect">
+<!-- TopAppBar Shell -->
+<header class="fixed top-0 w-full flex justify-between items-center px-6 h-20 bg-[#f8faf7] dark:bg-[#121413] z-50">
+<div class="flex items-center gap-4">
+<button class="p-2 text-[#00342b] dark:text-[#e1e3e0] hover:bg-[#f2f4f1] dark:hover:bg-[#191c1b] transition-colors scale-95 active:duration-150" style="">
+<span class="material-symbols-outlined" data-icon="menu" style="">menu</span>
+</button>
+<span class="font-serif text-[#00342b] dark:text-[#e3c191] italic font-bold text-2xl tracking-tight" style="">Sarung Berkualitas</span>
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-label text-sm font-bold tracking-widest uppercase text-[#00342b] dark:text-[#e3c191]" href="#" style="">Home</a>
+<a class="font-label text-sm font-bold tracking-widest uppercase text-[#606663] hover:text-[#00342b] transition-colors" href="#alamat" style="">Alamat</a>
+<a class="font-label text-sm font-bold tracking-widest uppercase text-[#606663] hover:text-[#00342b] transition-colors" href="#whatsapp" style="">WhatsApp</a>
+</nav>
+<div class="flex items-center gap-2">
+<button class="p-2 text-[#00342b] dark:text-[#e1e3e0] hover:bg-[#f2f4f1] transition-colors" style="">
+<span class="material-symbols-outlined" data-icon="shopping_bag" style="">shopping_bag</span>
+</button>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[795px] flex items-center overflow-hidden px-6 lg:px-24">
+<div class="absolute inset-0 z-0">
+<img alt="Premium Sarong Texture" class="w-full h-full object-cover brightness-75 opacity-90" data-alt="Close-up of premium silk sarong fabric with intricate golden embroidery weaving and deep emerald green textures in dramatic soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJ24zE7TbRu04kImgqmcMrm64lYfhkND2iHtU8sPBpoX1qe9yA2YCr56o4_uw4IFscSXOTq6cAEoy3uDMy_qehKIv5Z2jOf363OfZSmf1rz0usS2v_CnHsu8_x6ea8YWcZORDYD7R7s-QDsFiGY50WqeGbstPhbZlO6nEm5shpNnfFIbW-KCyCaohxWtKltjUtlLxI_4H1rQahe0hdZuNjbz02-pnsKQkYmj6KvbzK0JF0SoJSa8ZVP1uY2T5MA95XGBwRJzRn8l8" style=""/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-2xl">
+<p class="font-label text-xs uppercase tracking-[0.3em] text-tertiary-fixed-dim mb-4" style="">Warisan Budaya Indonesia</p>
+<h1 class="text-display-lg text-5xl md:text-7xl font-headline font-bold text-white leading-tight mb-8" style="">
+          Koleksi Sarung <span class="italic text-tertiary-fixed-dim" style="">Premium</span> untuk Anda
+        </h1>
+<div class="flex flex-wrap gap-6 items-center">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-sm font-bold tracking-wider hover:bg-primary-container transition-all flex items-center gap-3 group" style="">
+            Lihat Koleksi
+            <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward" style="">arrow_forward</span>
+</button>
+<a class="text-white font-label text-sm tracking-widest uppercase border-b border-white/30 hover:border-tertiary-fixed-dim hover:text-tertiary-fixed-dim transition-all py-1" href="1tentangkami.html" style="">Cerita Kami</a>
+</div>
+</div>
+<!-- Asymmetric Decorative Element -->
+<div class="hidden lg:block absolute -right-20 top-1/2 -translate-y-1/2 w-1/3 aspect-[3/4] bg-surface-container-lowest p-4 shadow-xl rotate-3">
+<img alt="Featured Sarong" class="w-full h-full object-cover" data-alt="Exquisitely folded traditional Indonesian sarong displayed on a rustic wooden pedestal against a dark minimal background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNyUFRY6oFzV1NY5ZuKT8Vu1mPJwJ0Al6oDQpvKfw4JRYYA6XUmXKugKRDdUErQnZTPlV8gympnrZvVIDPtV3xpzOWlJ5o3SZikiphUh9ja0r7eZJqUOrUujazUfQTdlTxId02gUhKYCjzsoxhuQ_qaBTGVTN_s9h5av4d74bbrzlqgPEH1bWW3qSbOPwDJxM4InGI5lMctKGw8CKsCw1HBswx42vQHQ-wPIjE1pGxH1zg4OMJtXqIVS13zYJQ2GZcFgUiBXlDVQc" style=""/>
+</div>
+</section>
+<!-- Product Showcase (Bento Style) -->
+<section class="py-24 px-6 lg:px-24 bg-surface">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-xl">
+<h2 class="text-4xl font-headline font-bold text-primary mb-4" style="">Pilihan Mahakarya</h2>
+<p class="text-on-surface-variant leading-relaxed" style="">Setiap helai benang ditenun dengan presisi tinggi oleh pengrajin berpengalaman, menciptakan kenyamanan yang tak tertandingi dalam setiap ibadah dan acara formal Anda.</p>
+</div>
+<div class="flex gap-4">
+<span class="font-label text-xs uppercase tracking-widest text-outline" style="">Filter by</span>
+<div class="flex gap-2">
+<span class="bg-primary text-tertiary-fixed-dim px-4 py-1 rounded-sm text-xs font-bold" style="">Silk Series</span>
+<span class="bg-secondary-container text-on-secondary-container px-4 py-1 rounded-sm text-xs font-bold" style="">Cotton Premium</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Feature Card Large -->
+<div class="md:col-span-8 group relative overflow-hidden bg-surface-container-low h-[500px]">
+<img alt="Craftsmanship" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80" data-alt="Artisan weaver hands working on a traditional loom with green and gold silk threads in a sunlit workshop" src="https://assetd.kompas.id/T40IztoIXInu10Z0nAfFbutA2Zo=/1024x775/smart/filters:format(webp):quality(80):watermark(https://cdn-content.kompas.id/umum/kompas_main_logo.png,-16p,-13p,0)/https://asset.kgnewsroom.com/photo/pre/2024/10/09/99648fce-5788-4455-b473-82c804205a07_jpg.jpg" style=""/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-10 text-white">
+<h3 class="text-3xl font-headline mb-2" style="">Seri Exclusive Emerald Gold</h3>
+<p class="text-on-primary-container max-w-md mb-6" style="">Paduan sutra pilihan dengan motif emas timbul yang elegan.</p>
+<button class="text-tertiary-fixed-dim font-bold uppercase tracking-widest text-sm flex items-center gap-2" style="">
+              Detail Produk <span class="material-symbols-outlined" data-icon="trending_flat" style="">trending_flat</span>
+
+</div>
+</div>
+<!-- Small Card 1 -->
+<div class="md:col-span-4 flex flex-col gap-4">
+<div class="h-1/2 bg-white p-6 flex flex-col justify-between group">
+<div class="relative h-40 overflow-hidden mb-4">
+<img alt="Product 2" class="w-full h-full object-cover" data-alt="High-end textile showroom with folded luxury sarongs arranged by color from emerald to deep gold" src="https://down-id.img.susercontent.com/file/ab6ba4febbb5a30f62b3a98eb9bd12b1" style=""/>
+</div>
+<div>
+<span class="text-[10px] font-bold tracking-[0.2em] text-outline uppercase" style="">New Arrival</span>
+<h4 class="font-headline font-bold text-primary text-xl" style="">Sarung BHS Premium</h4>
+<p class="text-tertiary font-bold mt-2" style="">Rp 850.000</p>
+<a class="mt-6 w-full inline-flex items-center justify-center bg-primary text-white py-3 rounded-sm font-headline font-bold uppercase tracking-widest text-xs hover:bg-primary-container hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 shadow-md hover:shadow-lg" href="1pembayaran1.html" style="">Beli Sekarang</a></div>
+</div>
+<!-- Small Card 2 -->
+<div class="h-1/2 bg-surface-container-high p-6 flex flex-col justify-between group">
+<div class="relative h-40 overflow-hidden mb-4">
+<img alt="Product 3" class="w-full h-full object-cover" data-alt="Folded green textile with gold patterns and luxury packaging box on a minimalist marble surface" src="https://bimamedia-cms.sg-sin-1.linodeobjects.com/behaestex.co.id/2024/10/11/l-gambar-whatsapp-2024-10-07-pukul-090745db8763608f7d92fbf61bad58092f2817aadf0aae20241011015425-bimacms.jpg" style=""/>
+</div>
+<div>
+<span class="text-[10px] font-bold tracking-[0.2em] text-outline uppercase" style="">Limited</span>
+<h4 class="font-headline font-bold text-primary text-xl" style="">Sarung BHS Premium</h4>
+<p class="text-tertiary font-bold mt-2" style="">Rp 1.200.000</p>
+<a class="mt-6 w-full inline-flex items-center justify-center bg-primary text-white py-3 rounded-sm font-headline font-bold uppercase tracking-widest text-xs hover:bg-primary-container hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 shadow-md hover:shadow-lg" href="2pembayaran2.html" style="">Beli Sekarang</a></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Address & Map Section -->
+<section class="py-24 bg-surface-container-low px-6 lg:px-24" id="alamat">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<span class="font-label text-xs uppercase tracking-widest text-primary font-bold mb-4 block" style="">Kunjungi Galeri Kami</span>
+<h2 class="text-4xl font-headline font-bold text-primary mb-8 leading-tight" style="">Lokasi Strategis di Pusat Tekstil</h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="w-12 h-12 rounded-sm bg-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-tertiary-fixed-dim" data-icon="location_on" style="">location_on</span>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-1 uppercase tracking-wider text-sm" style="">Alamat Galeri</h4>
+<p class="text-on-surface-variant" style="">Desa Kramat suko harjo rt\rw 01\06</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 rounded-sm bg-surface-container-highest flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary" data-icon="schedule" style="">schedule</span>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-1 uppercase tracking-wider text-sm" style="">Jam Operasional</h4>
+<p class="text-on-surface-variant" style="">Senin - Sabtu: 09.00 - 17.00 WIB<br/>Minggu : Tutup</p>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+<!-- WhatsApp CTA Section -->
+<section class="py-24 px-6 lg:px-24 bg-primary text-white text-center relative overflow-hidden" id="whatsapp">
+<!-- Decorative background pattern simulation -->
+<div class="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none" style="background-image: radial-gradient(#e3c191 1px, transparent 1px); background-size: 32px 32px;"></div>
+<div class="relative z-10 max-w-3xl mx-auto">
+<span class="material-symbols-outlined text-6xl text-tertiary-fixed-dim mb-6" data-icon="chat" style="">chat</span>
+<h2 class="text-4xl font-headline font-bold mb-6" style="">Konsultasi dengan Personal Shopper Kami</h2>
+<p class="text-on-primary-container text-lg mb-10 leading-relaxed" style="">Punya pertanyaan tentang motif, bahan, atau pesanan khusus? Hubungi tim kami langsung melalui WhatsApp untuk respon cepat dan pelayanan personal.</p>
+<a class="inline-flex items-center gap-4 bg-tertiary-fixed-dim text-primary px-10 py-5 rounded-sm font-bold text-lg hover:bg-tertiary-fixed transition-transform active:scale-95" href="https://wa.me/6282147026723" style="">
+          Hubungi WhatsApp Sekarang
+          <span class="material-symbols-outlined" data-icon="send" style="">send</span>
+</a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-inverse-surface text-surface-variant pt-20 pb-28 md:pb-12 px-6 lg:px-24">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="md:col-span-2">
+<span class="font-serif text-[#e3c191] italic font-bold text-3xl block mb-6" style="">Sarung Berkualitas</span>
+<p class="max-w-md leading-relaxed opacity-70" style="">Dedikasi kami untuk melestarikan tradisi menenun Indonesia melalui koleksi sarung premium yang menggabungkan kemewahan visual dan kenyamanan spiritual.</p>
+</div>
+<div>
+<h4 class="text-white font-bold uppercase tracking-widest text-xs mb-6" style="">Menu Utama</h4>
+<ul class="space-y-4 text-sm">
+<li class="" style=""><a class="hover:text-tertiary-fixed-dim transition-colors" href="#" style="">Koleksi Terbaru</a></li>
+<li class="" style=""><a class="hover:text-tertiary-fixed-dim transition-colors" href="1tentangkami.html" style="">Tentang Kami</a></li>
+<li class="" style=""><a class="hover:text-tertiary-fixed-dim transition-colors" href="#" style=""></a></li>
+<li class="" style=""><a class="hover:text-tertiary-fixed-dim transition-colors" href="#" style=""></a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold uppercase tracking-widest text-xs mb-6" style="">Media Sosial</h4>
+<ul class="space-y-4 text-sm">
+<li class="" style=""><a class="hover:text-tertiary-fixed-dim transition-colors" href="https://www.instagram.com/rull_444__?igsh=MTlpNmpwanNjNGI4MA==" style="">Instagram</a></li>
+<li class="" style=""><a class="hover:text-tertiary-fixed-dim transition-colors" href="#" style="">Facebook</a></li>
+<li class="" style=""><a class="hover:text-tertiary-fixed-dim transition-colors" href="https://www.tiktok.com/@tobat_woi10?_r=1&_t=ZS-95WaATPKtQO" style="">TikTok</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between gap-4 text-xs opacity-50">
+<p class="" style="">© 2024 Sarung Berkualitas. All Rights Reserved.</p>
+<div class="flex gap-6">
+<a class="" href="#" style="">Privacy Policy</a>
+<a class="" href="#" style="">Terms of Service</a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar Shell (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-[#ffffff]/70 dark:bg-[#191c1b]/70 backdrop-blur-xl shadow-[0px_-4px_24px_rgba(25,28,27,0.04)] border-t border-[#bfc9c4]/15">
+<a class="flex flex-col items-center justify-center text-[#00342b] dark:text-[#e3c191] bg-[#dee4e0]/40 dark:bg-[#004d40]/30 rounded-xl px-4 py-1 transition-all duration-300 ease-in-out" href="#" style="">
+<span class="material-symbols-outlined" data-icon="home" style="">home</span>
+<span class="font-sans text-[10px] uppercase tracking-widest font-bold mt-1" style="">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#606663] dark:text-[#bfc9c4] px-4 py-1 hover:text-[#00342b] dark:hover:text-[#e3c191] transition-all duration-300 ease-in-out" href="#alamat" style="">
+<span class="material-symbols-outlined" data-icon="location_on" style="">location_on</span>
+<span class="font-sans text-[10px] uppercase tracking-widest font-bold mt-1" style="">Alamat</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#606663] dark:text-[#bfc9c4] px-4 py-1 hover:text-[#00342b] dark:hover:text-[#e3c191] transition-all duration-300 ease-in-out" href="#whatsapp" style="">
+<span class="material-symbols-outlined" data-icon="chat" style="">chat</span>
+<span class="font-sans text-[10px] uppercase tracking-widest font-bold mt-1" style="">WhatsApp</span>
+</a>
+</nav>
+</body></html>
